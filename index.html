@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/tools/reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/c101ab7deb.js" crossorigin="anonymous"></script>
+  <script async src="script.js"></script>
+  <title>FreeBook</title> 
+</head>
+
+<body>
+<header>
+    <img src="assets/images/logo-freebook.png" alt="Logo de Freebok">
+    <div class="titular">
+      <h1>FreeBook</h1>
+      <h2>Cuando aprendes a leer, serás libre para siempre</h2>
+    </div>
+  <!--Menú hamburguesa-->
+  <nav class="menu-hamburguesa">
+    <!-- Input tipo checkbox para controlar el menú -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <!-- Label que actúa como el ícono del menú -->
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <!-- Contenido del menú -->
+    <ul class="menu">
+      <li><a href="#login">Inicio</a></li>
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#favorite">Favoritos reemplaza carrito</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#logout">Salir</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!--Menú en barra horizontal-->
+  <div class="barra">
+    <nav>
+      <button id="login">Iniciar Sesión</button>
+      <button id="about">Sobre nosotros</button>
+      <button id="favorite">Favoritos</button>
+      <button id="contacto">Contacto</button>
+      <button id="logout">Salir</button>
+    </nav>
+  </div>
+<!--Carrusel de tres libros pseudo aleatorio con JS-->  
+<h2>Recomendamos</h2> 
+<section id="carrusel">
+    <article class="book">
+      <figure>
+        <img src="assets/biblioteca/ElPrincipito.jpg" alt="El principito en francés"> 
+        <figcaption>
+          <p>Le petit prince</p>
+          <p>Saint Exupéry</p>
+        </figcaption>
+      </figure>
+      <div>
+        <button class="opciones"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
+        <button class="opciones"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
+        <button class="opciones"><a href="#favorite">Favorito</a></button>
+      </div>
+    </article>
+    <article class="book">
+      <figure>
+        <img src="assets/biblioteca/LaCenicientaSiglo21.jpg" alt="La cenicienta que no quería comer perdices en español"> 
+        <figcaption>
+          <p>La cenicienta que no quería comer perdices</p>
+          <p>López Salamero</p>
+        </figcaption>
+      </figure>
+      <div>
+        <button><a href="assets/biblioteca/LaCenicientaSiglo21.pdf">Leer</a></button>
+        <button><a href="assets/biblioteca/LaCenicientaSiglo21.mp3">Escuchar</a></button> 
+        <button class="opciones"><a href="#favorite">Favorito</a></button>
+      </div>
+    </article>
+    <article class="book">
+      <figure>
+        <img src="assets/biblioteca/PorCuatroEsquinitas.jpg" alt="La cenicienta que no quería comer perdices en español"> 
+        <figcaption>
+          <p>Por cuatro esquinitas de nada</p>
+          <p>Ruillier</p>
+        </figcaption>
+      </figure>
+      <div>
+        <button><a href="assets/biblioteca/PorCuatroEsquinitas.pdf">Leer</a></button>
+        <button><a href="assets/biblioteca/PorCuatroEsquinitas.mp3">Escuchar</a></button> 
+        <button class="opciones"><a href="#favorite">Favorito</a></button>      
+      </div>
+    </article>
+<!--Beneficios contenedor de 3 cajas-->
+  <h2>Beneficios de la comunidad Freebook</h2>
+  <section class="beneficios">
+    <article id="login"> <!-- id iniciar sesión con JS -->
+      <img src="#" alt="Icono Usuario">
+      <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
+      <button id="login">Inicio</button>
+    </article>
+    
+    <article id="about">
+      <img src="#" alt="Icono sobre nosotros">
+      <p>Descripción de visión, misión y valores: facilitar el acceso a clásicos de la literatura
+      </p>
+      <button id="return">Volver</button>
+    </article>
+    
+    <article id="favorite">
+      <img src="#" alt="Icono favoritos">
+      <p>Funciona como carrito</p>
+    </article>
+
+    <article id="library"><!-- Catálogo con React y Buscar en BD interna-->
+      <img src="#" alt="Icono de catálogo">
+      <p>Descripción del catálogo </p>
+      <button id="epub">Libros electrónicos</button>
+      <button>Audiolibros</button>
+      <button id="return">Volver</button>
+    <article id="search"></article>
+      <img src="#" alt="Imagen de lupa">
+      <p>Buscar en el catálogo</p>
+      <button>Buscar</button>
+    </article>
+</main>
+<!-- CONTENIDO ESPECÍFICO-->
+<!-- Formulario de contacto con CSS y JS -->
+<section id="contact">
+  <!--Registrar nuevo usuario y validar usuario con mail y contraseña en JS-->
+  <form action="/enviar-mensaje" method="post">
+    <ul>
+      <li>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="user_name" />
+      </li>
+      <li>
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" name="user_mail" />
+      </li>
+      <li>
+        <label for="msg">Mensaje:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </li>
+    </ul>
+  </form>
+</section>
+<!-- Desarrollo marcar favorito con CSS y  JS-->
+<section>
+  <article>
+    <img src="#" alt="icono de estrella">
+  </article>
+
+  <footer>
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank"><img src="assets/images/CC-BY.png" alt="Licencia Creative Commons Atribución"></a>
+    <h3>Desarrollado por Alicia López - 2024</h3>
+    <a href="https://github.com/aliciablopez" target="_blank"><img src="assets/images/github.png" alt="Logo de Github"></a>
+    <a href="https://www.linkedin.com/in/aliciablopez" target="_blank"><img src="assets/images/linkedIn.png" alt="Logo de LinkedIn"></a>
+  </footer>
+</body>
+</html>
