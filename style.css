@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /* Reset básico */
-body, h1, ul, li, a {
+* body, h1, ul, li, a{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -17,8 +17,8 @@ body, h1, ul, li, a {
 --background-boton-on: yellowgreen; /*para probar con hover*/
 --border: thin solid black;
 
---font-h1: normal 2rem "Lexend", sans-serif;
---font-h2: normal 1.5rem "Josefin", sans-serif;
+--font-h1: normal 1.75rem "Lexend", sans-serif;
+--font-h2:italic 1.5rem "Josefin", sans-serif;
 --font-h3: normal 1.25rem "Funnel Sans", sans-serif;
 --font-p: normal 1rem "Atkinson-Hyperlegible", sans-serif;
 }
@@ -29,27 +29,49 @@ body{
   background-repeat: no-repeat;
 }
 header, footer{
-  margin-top: 0%;
-  padding: 2%;
-  justify-content: space-between;
+  margin: 0;
+  padding: 1.5% 1%;
+  
   background: var(--background-heading);
   width: 100%;
   height: 10%;
   border: var(--border); /* ayuda visual exclusivo durante el desarrollo web*/
   display: flex;
+  z-index: 10;
   flex-flow: row wrap;
+  align-content: start;
+  justify-items: auto;
+  flex-grow: 1;
+  gap: 10px;
 }
-header img,footer img{
-  width: 15%;
+header img{
+  position: relative;
+  width: 20vw;
   height: fit-content;
+
+}
+footer img{
+  width: 5vw;
+  height:fit-content;
+  padding: 2%;
 }
 .titular{
-  width:fit-content;
-  height: fit-content;
+  position: relative;
+  width: 60vw;
+  height: inherit;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-evenly;
-  align-items: center; 
+  justify-content: space-between;
+  align-content: center;
+  font: var(--font-h1);
+ 
+}
+footer p{
+  width: 75vw;
+  height: fit-content;
+  font: var(--font-h2);
+  text-align: center;
+  justify-content: center;
 }
 h1{
   font:var(--font-h1);
@@ -58,7 +80,7 @@ h1{
 h2{
   font:var(--font-h2);
   text-align: center;
-  color:indigo;
+  color:DarkViolet;
   padding: 2%;
 }
 h3{
@@ -153,7 +175,6 @@ main{
   width: 100%;
   height: 10%;
   margin: 1%;
-
 }
 button{
   display: flex;
@@ -167,14 +188,12 @@ button{
   padding: 1rem;
 }
 
-/*--- CARRUSEL ---*/
+/*--- CARRUSEL: RECOMENDADO + BENEFICIOS + BUSCAR ---*/
+/*-- Contenedor --*/
 #carrusel{
-  display:flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: space-around;
-  justify-items: center;
-  width: 100%;
+  display: grid;
+
+
   height: 40%;
 }
 /*--- RECOMENDADO + BENEFICIOS ---*/
