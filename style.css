@@ -176,73 +176,18 @@ button:active{
   background-color: var(--background-main);
   padding: 0.5%;
 }
-/*-- ESTILOS DE OFERTA -- */
-.oferta{
-  display: grid;
-  grid-template-columns: repeat(4,minmax(320px, 100%));
-  grid-template-rows: 1rem 2rem;
-  gap: 1%;
-  margin-top: 0.5%;
-  padding: 1%;
-
-  grid-template-areas:'cabecera cabecera cabecera cabecera'
-                      'art art art art'
+/*-- ESTILOS DE GALERIA DE ARTICULOS -- */
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2%;
+  margin: 5%;
 }
-.oferta .libro{
-  grid-area: recomendado;
+.gallery article{
+  width: 33%;
+  text-align: center;
 }
-.oferta .beneficios{
-  grid-area: beneficio;
-}
-.oferta h2{
-  grid-area: cabecera;
-}
-.oferta article{
-  grid-area: art;
-
-}
-/*-- ESTILOS DE LIBRO --*/ 
-.libro article{
-
-}
-.libro figure
-{
-
-}
-.libro figcaption{
-
-}
-
-/*-- ESTILOS DE BENEFICIOS --*/
-.beneficios article{
-
-}
-
-#login{
-
-}
-#about{
-
-}
-#favorite{
-
-}
-#contact{
-
-}
-#search{
-
-}
-#logout{
-
-}
-#descargar{
-
-}
-#escuchar{
-
-}
-
 
 /*-- ESTILOS DE FOOTER --*/
 footer{
