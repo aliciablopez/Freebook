@@ -32,10 +32,12 @@
     </label>
     <!-- Contenido del menú -->
     <ul class="menu">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#login">Inicio</a></li>
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#favorite">Servicios</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#search">Contacto</a></li>
+      <li><a href="#logout">Contacto</a></li>
     </ul>
   </nav>
   </header>
@@ -92,10 +94,41 @@
     </article>
   </section>
 </main>
-<!-- CONTENIDO ESPECÍFICO -->
+<!-- FORMULARIOS -->
  <!-- Formulario de contacto CSS -->
-
-
+<!-- ELEMENTOS
+h2 Formulario de contacto
+p Escríbenos y responderemos a la brevedad
+campos: 
+  nombre y apellido
+  email (validar estructura usuario@mail.com)
+  asunto
+  mensaje
+boton enviar 
+p Todos los campos son obligatorios: solo envia si todos los campos están completos
+-->
+<div class="contact-form">
+  <h2>Formulario de contacto</h2>
+  <p>Escríbenos y responderemos a la brevedad</p>
+<form action="/my-handling-form-page" method="post"> <!-- revisar el almacenamiento de action -->
+  <ul>
+    <li>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="mail">Correo electrónico:</label>
+      <input type="email" id="mail" name="user_mail" />
+    </li>
+    <li>
+      <label for="subject">Asunto</label>
+      <label for="msg">Mensaje:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </li>
+  </ul>
+  <p>Todos los campos son obligatorios</p>
+</form>
+</div>
 <!-- Forumulario de registro y validación de usuario y contraseña JS-->
 <!-- Guardar favoritos -->
 <!-- Catálogo como base de datos interna --> 
