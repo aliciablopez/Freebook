@@ -79,7 +79,8 @@ p{
 }
  
 /*-- ESTILOS DE BURGER --*/
-.burger-menu {
+/* Menú hamburguesa */
+.menu-hamburguesa {
   position: relative;
 }
 .menu-toggle {
@@ -90,15 +91,15 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 4rem;
-  height: 4rem;
+  width:50px; /* Aumenta el área clicable */
+  height: 50px;
+  padding: 10px; /* Más espacio clicable alrededor */
   cursor: pointer;
-  padding: 0.5vw; /* ampliar el área clicable*/
 }
-.menu-icon span{
+.menu-icon span {
   display: block;
   height: 4px;
-  background-color:black;
+  background-color: black;
   border-radius: 2px;
   width: 100%;
   transition: all 0.3s ease;
@@ -106,40 +107,40 @@ p{
 /* Menú desplegable */
 .menu {
   display: none;
-  flex-flow: column nowrap;
+  flex-direction: column;
   background-color: var(--background-menu);
-  border: var(--border);
-  position: relative;
+  position: absolute;
   top: 100%;
   right: 0;
-  width: 25vw;
+  width: 20vw;
   padding: 1rem;
-  border-radius: 5px;
-  opacity: 0.80;
+  border-radius: 2rem;
+  border: var(--border);
 }
 .menu li {
   margin: 0.5rem 0;
-  border-bottom: var(--border);
+
 }
 .menu li a {
-  color:black;
+  color: black;
   font-size: 1.2rem;
 }
 /* Mostrar menú al activar el checkbox */
 .menu-toggle:checked + .menu-icon + .menu {
   display: flex;
+
 }
 /* Animaciones para transición */
 .menu-toggle:checked + .menu-icon span:nth-child(1) {
-  opacity: 0;
+  transform: translateY(8px) rotate(45deg);
 }
 .menu-toggle:checked + .menu-icon span:nth-child(2) {
-  transform: translateY(8px) rotate(45deg);
-  
+  opacity: 0;
 }
 .menu-toggle:checked + .menu-icon span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
 /*-- ESTILOS DEL MAIN --*/
 main{
   display: grid;
