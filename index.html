@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="assets/tools/reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" href="form.css"> <!-- Estilo especifico para los formularios-->
   <script src="https://kit.fontawesome.com/c101ab7deb.js" crossorigin="anonymous"></script>
   <title>Proyecto FreeBook</title>
 </head>
@@ -47,11 +49,38 @@
       <button id="login" type="button">Iniciar Sesión</button>
       <button id="about" type="button">Sobre nosotros</button>
       <button id="favorite" type="button">Favoritos</button>
-      <button id="contact" type="button">Contacto</button>
+      <button id="contact" type="button" onclick="openForm()">Contacto</button>
       <button id="search" type="button">Buscar</button>      
       <button id="logout" type="button">Salir</button>
     </nav>
   </section>
+  <form id="contacto">
+    <h2>Contáctanos</h2>
+    <div class="FormContainer">
+        <div class="FormGroup">
+            <input type="text" id="name" placeholder=" ">
+            <label for="nombre">Nombre</label>
+            <span></span>
+        </div>
+        <div class="FormGroup">
+            <input type="text" id="text" placeholder=" ">
+            <label for="text">Mensaje</label>
+            <span></span>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="cancel" onclick="closeForm()">cerrar</button>
+    </div>
+  </form>
+  <script>
+    function openForm() {
+      document.getElementById("contacto").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("contacto").style.display = "none";
+    }
+  </script>
+  
   <!-- Oferta y descripción del proyecto -->
   <section class="oferta">
     <h2>Recomendado</h2>
