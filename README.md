@@ -22,17 +22,20 @@ En esa línea se tuvo en cuenta:
 +*Diseño responsive*: El diseño es compatible con distintos tamaños y posiciones de dispositivos
 + *Uso de fuentes*: tipografía sans serif y apta para personas con baja visión o dislexia
 + *Estándares de diseño web nivel AA*: Pautas y criterios compatibles con las tecnologías de W3C y WAI.
-# Etapas del proyecto
-+ Diseño IU/UX: completado
-+ Estructura HTML: completado
-+ Estilos contenedores CSS: en curso
-+ Estilos items CSS: en curso
-+ Botones JS: pendiente
-+ Formulario de registro JS: pendiente
-+ Formulario de contacto CSS: pendiente
-+ Carrito de descargas: pendiente
-+ Historial de lecturas: pendiente
-+ Historial de descarga: pendiente
+# Etapas del proyecto completada
++ Diseño IU/UX
++ Estructura HTML
++ Estilos contenedores
+# Etapas del proyecto en curso
++ Funcionalidad de botones
++ Difuminar backgraund header, main y footer
++ Tamaño de botones uniforme
+# Etapas del proyecto FreeBook 1
++ Carrito de descargas ()
++ Historial de lecturas (cantidad de favoritos): pendiente
 + Consulta de catálogo: pendiente
-+ Opciones para configurar: pendiente
-# FreeBook
++ Establecer tipos de asuntos en formulario de contacto
++ back
+# Etapas del proyecto FreeBook 2
++ Backend para gestionar catálogo y usuarios.
++ Selectores CSS con BEM

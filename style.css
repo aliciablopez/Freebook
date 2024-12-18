@@ -17,7 +17,9 @@
 --background-boton-on:mistyrose;
 --background-boton-in: pink;
 --background-menu:AntiqueWhite;
+--background-form: aliceblue;
 
+--form-shadow:0 5px 10px -5px rgb(221, 160, 221 / 30%);
 --border: thin solid black;
 
 --font-h1: normal 1.75rem "Lexend", sans-serif;
@@ -128,7 +130,6 @@ p{
 /* Mostrar menú al activar el checkbox */
 .menu-toggle:checked + .menu-icon + .menu {
   display: flex;
-
 }
 /* Animaciones para transición */
 .menu-toggle:checked + .menu-icon span:nth-child(1) {
@@ -147,7 +148,7 @@ main{
   grid-template-columns: repeat(auto-fit,minmax(320px,100%));
   grid-template-rows: auto-fit,100%;
   gap: 1%;
-  margin-top: 0.5%;
+  margin-top: 0%;
   padding: 0%;
   height: 70%;
   background: var(--background-main);
@@ -178,17 +179,25 @@ button:active{
   padding: 0.5%;
 }
 /*-- ESTILOS DE OFERTA -- */
-.oferta{
+.oferta article{
   display: grid;
   grid-template-columns: repeat(4,minmax(320px, 100%));
   grid-template-rows: 1rem 2rem;
   gap: 1%;
   margin-top: 0.5%;
   padding: 1%;
+  
 
   grid-template-areas:'cabecera cabecera cabecera cabecera'
                       'art art art art'
 }
+.oferta figure{
+
+}
+.oferta figcaption{
+
+}
+/*-- Estilos del grid oferta*/
 .oferta .libro{
   grid-area: recomendado;
 }
@@ -200,49 +209,56 @@ button:active{
 }
 .oferta article{
   grid-area: art;
-
 }
 /*-- ESTILOS DE LIBRO --*/ 
-.libro article{
+.libro img{
 
 }
-.libro figure
-{
-
-}
-.libro figcaption{
-
-}
-
 /*-- ESTILOS DE BENEFICIOS --*/
-.beneficios article{
 
+/*-- ESTILOS DEL FORMULARIO DE CONTACTO ---*/
+.formulario{
+  display:grid;
+  margin-top: 1%;
+  padding: 1%;
+  gap: 1%;
+  background-color: var(--backgroud-menu);
+  width: 50vw;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: var(--border);
+}
+.formulario label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  border: var(--border);
+  outline: none;
+  transform: translateY(10px);
+  transition: .5s, color, 3s;
+}
+.formulario input, .formulario textarea, #password{
+  box-sizing: border-box;
+  margin: 1%;
+  padding: 2.5% 1.5%;
+  border-radius: 2rem;
+  width: 100%;
+  height: .5%;
+  
+  font-size: 1rem;
+}
+.formulario textarea {
+  margin-block-end: 2rem;
+  font-family: inherit;
+}
+.formulario__input:focus + .formulario label, .formulario__input:not(:placeholder-shown) + .formulario__label{
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
 }
 
-#login{
 
-}
-#about{
-
-}
-#favorite{
-
-}
-#contact{
-
-}
-#search{
-
-}
-#logout{
-
-}
-#descargar{
-
-}
-#escuchar{
-
-}
+/*--- ESTILOS DE REGISTRO ---*/
 
 
 /*-- ESTILOS DE FOOTER --*/
@@ -254,11 +270,9 @@ footer{
   align-items: center;
   margin-bottom: 0%;
   padding: 1% 1.5%;
-
   background: var(--background-heading);
   width: 100%;
   height: 10%;
-
 }
 footer img{
   width: 5vw;
