@@ -56,42 +56,46 @@
   <!-- Oferta y descripción del proyecto -->
   <section class="oferta">
     <h2>Recomendado</h2>
-    <article class="libro">
-      <figure>
-        <img src="assets/portadas/Exupery-LePetitPrince.jpg" alt="El Principito - Saint Exupéry - idioma: francés">
-        <figcaption>
-          <p>Le petit prince - Saint Exupéry</p>
-        </figcaption>   
-      </figure>
-      <div>
-        <button id="favorite" type="button"><a href="#FAVORITE">Guardar</a></button> <!--Equivale al carrito de compras-->
-        <button id="descargar" type="button"><a href="#DESCARGAR">Descargar</a></a></button>
-        <button id="escuchar" type="button"><a href="assets/biblioteca/Exupery-LePetitPrince.mp3">Escuchar</a></button>
-      </div>
-    </article>
+    <div class="gallery">
+      <article class="libro"> <!-- Plantilla para los libros-->
+        <figure>
+          <img src="assets/portadas/Exupery-LePetitPrince.jpg" alt="El Principito - Saint Exupéry - idioma: francés">
+          <figcaption>
+            <p>Le petit prince - Saint Exupéry</p>
+          </figcaption>   
+        </figure>
+        <div>
+          <button id="favorite" type="button"><a href="#FAVORITE">Guardar</a></button> <!--Equivale al carrito de compras-->
+          <button id="descargar" type="button"><a href="#DESCARGAR">Descargar</a></a></button>
+          <button id="escuchar" type="button"><a href="assets/biblioteca/Exupery-LePetitPrince.mp3">Escuchar</a></button>
+        </div>
+      </article>
+    </div>
   </section>
   <section class="oferta">
     <h2>Beneficios de la comunidad FreeBook</h2>
-    <article class="beneficios">
-      <i class="fa-solid fa-bookmark"></i>
-      <h3>Membresía</h3>
-      <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
-      <button id="login" type="button">Iniciar sesión</button>
-    </article>
-    <article class="beneficios">
-      <i class="fa-solid fa-people-group"></i>
-      <h3>Proyecto FreeBook</h3>
-      <p>Visión, misión y valores de la comunidad Freebook</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sequi laboriosam culpa ipsam suscipit harum.</p>
-    <button id="contacto" type="button">Contacto</button> 
-    </article>
-    <article class="beneficios">
-      <i class="fa-solid fa-tablet-screen-button"></i>
-      <h3>Catálogo</h3>
-      <p>Oferta de libros electrónicos y audiolibros</p>
-      <button id="epub" type="button">Libros electrónicos</button>
-      <button id="audio" type="button">Audiolibros</button>
-    </article>
+    <div class="gallery">
+      <article class="beneficios">
+        <i class="fa-solid fa-bookmark fa-5x"></i>
+        <h3>Membresía</h3>
+        <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
+        <button id="login" type="button">Iniciar sesión</button>
+      </article>
+      <article class="beneficios">
+        <i class="fa-solid fa-people-group fa-5x"></i>
+        <h3>Proyecto FreeBook</h3>
+        <p>Visión, misión y valores de la comunidad Freebook</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sequi laboriosam culpa ipsam suscipit harum.</p>
+      <button id="contacto" type="button">Contacto</button> 
+      </article>
+      <article class="beneficios">
+        <i class="fa-solid fa-tablet-screen-button fa-5x"></i>
+        <h3>Catálogo</h3>
+        <p>Oferta de libros electrónicos y audiolibros</p>
+        <button id="epub" type="button">Libros electrónicos</button>
+        <button id="audio" type="button">Audiolibros</button>
+      </article>
+    </div>
   </section>
 </main>
 <!-- FORMULARIOS -->

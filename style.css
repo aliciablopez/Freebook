@@ -178,88 +178,18 @@ button:active{
   background-color: var(--background-main);
   padding: 0.5%;
 }
-/*-- ESTILOS DE OFERTA -- */
-.oferta article{
-  display: grid;
-  grid-template-columns: repeat(4,minmax(320px, 100%));
-  grid-template-rows: 1rem 2rem;
-  gap: 1%;
-  margin-top: 0.5%;
-  padding: 1%;
-  
-
-  grid-template-areas:'cabecera cabecera cabecera cabecera'
-                      'art art art art'
+/*-- ESTILOS DE GALERIA DE ARTICULOS -- */
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2%;
+  margin: 5%;
 }
-.oferta figure{
-
+.gallery article{
+  width: 33%;
+  text-align: center;
 }
-.oferta figcaption{
-
-}
-/*-- Estilos del grid oferta*/
-.oferta .libro{
-  grid-area: recomendado;
-}
-.oferta .beneficios{
-  grid-area: beneficio;
-}
-.oferta h2{
-  grid-area: cabecera;
-}
-.oferta article{
-  grid-area: art;
-}
-/*-- ESTILOS DE LIBRO --*/ 
-.libro img{
-
-}
-/*-- ESTILOS DE BENEFICIOS --*/
-
-/*-- ESTILOS DEL FORMULARIO DE CONTACTO ---*/
-.formulario{
-  display:grid;
-  margin-top: 1%;
-  padding: 1%;
-  gap: 1%;
-  background-color: var(--backgroud-menu);
-  width: 50vw;
-  padding: 1rem;
-  border-radius: 2rem;
-  border: var(--border);
-}
-.formulario label {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 2rem;
-  border: var(--border);
-  outline: none;
-  transform: translateY(10px);
-  transition: .5s, color, 3s;
-}
-.formulario input, .formulario textarea, #password{
-  box-sizing: border-box;
-  margin: 1%;
-  padding: 2.5% 1.5%;
-  border-radius: 2rem;
-  width: 100%;
-  height: .5%;
-  
-  font-size: 1rem;
-}
-.formulario textarea {
-  margin-block-end: 2rem;
-  font-family: inherit;
-}
-.formulario__input:focus + .formulario label, .formulario__input:not(:placeholder-shown) + .formulario__label{
-  transform: translateY(-12px) scale(.7);
-  transform-origin: left top;
-}
-
-
-/*--- ESTILOS DE REGISTRO ---*/
-
 
 /*-- ESTILOS DE FOOTER --*/
 footer{
