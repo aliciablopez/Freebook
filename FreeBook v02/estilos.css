@@ -15,7 +15,7 @@
 --background-heading: lavenderblush;
 --background-boton:LightYellow;
 --background-menu:AntiqueWhite;
---background-libro:;
+/* --background-libro:; */
 --background-opciones:mistyrose;
 --background-boton-on: pink;
 --border: thin solid black;
@@ -92,7 +92,7 @@ p{
 }
 
 /*---  MENU HAMBURGUESA ---*/
-.menu-hamburguesa {
+.burger-menu {
   position: relative;
 }
 .menu-toggle {
