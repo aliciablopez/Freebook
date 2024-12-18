@@ -42,40 +42,43 @@
 </header>
 
 <main>
-<!--Menú en barra horizontal-->
+  <!--Menú en barra horizontal-->
   <div class="bar-menu">
     <nav>
       <button id="login" type="button">Iniciar Sesión</button>
       <button id="favorite" type="button">Favoritos</button>
       <button id="search" type="button">Buscar</button>
-      <button id="about" type="button">Sobre nosotros</button>      
-      <button id="contact" type="button">Contacto</button>
       <button id="logout" type="button">Salir</button>
     </nav>
   </div>
 <!--Carrusel de tres libros pseudo aleatorio con JS-->
-  
-<section class="caja">
+
+<section class="carrusel">
+  <div class="recomendado">
     <h2>Recomendado</h2>
-    <article id="libro">
-        <figure>
-          <img src="assets/portadas/Exupery-LePetitPrince.jpg" alt="El principito en francés"> 
-          <figcaption>
-            <p>Le petit prince - Saint Exupéry</p>
-          </figcaption>
-        </figure>
-        <div>
-          <button id="opciones" type="button"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
-          <button id="opciones" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
-          <button id="opciones" type="button"><a href="#favorite">Favorito</a></button>
-        </div>
-      </section>
-</div>
+    <article class="libro">
+      <figure>
+        <img src="assets/portadas/Exupery-LePetitPrince.jpg" alt="El principito en francés"> 
+        <figcaption>
+          <p>Le petit prince - Saint Exupéry</p>
+        </figcaption>
+      </figure>
+    </article>
+  </div>
+  
+  <div class="beneficios">
+            <button id="opciones" type="button"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
+            <button id="opciones" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
+            <button id="opciones" type="button"><a href="#favorite">Favorito</a></button>
+          </div>
+        </section>
+  </div>
     
 <!--Beneficios contenedor de 3 cajas-->
+<div class="Beneficios"></div>
   <h2>Beneficios de la comunidad Freebook</h2>
   <section id="caja">
-    <article id="beneficio"> <!-- id iniciar sesión con JS -->
+    <article id="beneficios"> <!-- id iniciar sesión con JS -->
       <i class="fa-solid fa-bookmark"></i>
       <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
       <button id="login" type="button">Inicio</button>
@@ -104,7 +107,8 @@
       <p>Buscar en el catálogo</p>
       <button type="button">Buscar</button>
     </article>
-</main>
+    </section>
+  </main>
 <!-- CONTENIDO ESPECÍFICO-->
 <!-- Formulario de contacto con CSS y JS -->
 <section id="formulario">
