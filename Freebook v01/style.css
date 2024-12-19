@@ -1,0 +1,217 @@
+/*--- Tipografias accesibles ---*/
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*-- RESET BASICO --*/
+* body, h1, ul, li, a{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/*--- Variables CSS ---*/
+:root{
+--background-main:lightcyan;
+--background-heading: lavenderblush;
+--background-boton:LightYellow;
+--background-boton-on:mistyrose;
+--background-boton-in: pink;
+--background-menu:AntiqueWhite;
+--background-form: aliceblue;
+
+--form-shadow:0 5px 10px -5px rgb(221, 160, 221 / 30%);
+--border: thin solid black;
+
+--font-h1: normal 1.75rem "Lexend", sans-serif;
+--font-h2:italic 1.5rem "Josefin", sans-serif;
+--font-h3: normal 1.25rem "Funnel Sans", sans-serif;
+--font-p: normal 1rem "Atkinson-Hyperlegible", sans-serif;
+}
+/*--- BLOQUES EN ORDEN DESCCENDENTE ---*/
+body{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items:center;
+
+  background: var(--background-heading);
+  width: 100%;
+  height: 10%;
+}
+/*-- ESTILOS DEL HEADER --*/
+header img{
+  position: relative;
+  width:20vw;
+  height: fit-content;
+}
+.titular{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 70vw;
+  height: fit-content;
+  margin: 0%;
+  padding: 0%;
+}
+h1{
+  font:var(--font-h1);
+  text-align: center;
+}
+h2{
+  font:var(--font-h2);
+  text-align: center;
+  color:DarkViolet;
+  padding: 2%;
+}
+h3{
+  font:var(--font-h3);
+  text-align: center;
+  padding: 1%;
+}
+p{
+  font: var(--font-p);
+}
+ 
+/*-- ESTILOS DE BURGER --*/
+/* Menú hamburguesa */
+.menu-hamburguesa {
+  position: relative;
+}
+.menu-toggle {
+  display: none;
+}
+/* Ícono del menú */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:50px; /* Aumenta el área clicable */
+  height: 50px;
+  padding: 10px; /* Más espacio clicable alrededor */
+  cursor: pointer;
+}
+.menu-icon span {
+  display: block;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+/* Menú desplegable */
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: var(--background-menu);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 20vw;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: var(--border);
+}
+.menu li {
+  margin: 0.5rem 0;
+
+}
+.menu li a {
+  color: black;
+  font-size: 1.2rem;
+}
+/* Mostrar menú al activar el checkbox */
+.menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+}
+/* Animaciones para transición */
+.menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/*-- ESTILOS DEL MAIN --*/
+main{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,100%));
+  grid-template-rows: auto-fit,100%;
+  gap: 1%;
+  margin-top: 0%;
+  padding: 0%;
+  height: 70%;
+  background: var(--background-main);
+}
+button{
+  padding: 10px 20px;
+  background: var(--background-boton);
+  color: black;
+  border: var(--border);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+button:hover{
+  background: var(--background-boton-on);
+}
+button:active{
+  background: var(--background-boton-in);
+}
+/*-- ESTILOS DE BAR --*/
+.bar-menu{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+  gap: 1%;
+  background-color: var(--background-main);
+  padding: 0.5%;
+}
+/*-- ESTILOS DE GALERIA DE ARTICULOS -- */
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2%;
+  margin: 5%;
+}
+.gallery article{
+  width: 33%;
+  text-align: center;
+}
+
+/*-- ESTILOS DE FOOTER --*/
+footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 0%;
+  padding: 1% 1.5%;
+  background: var(--background-heading);
+  width: 100%;
+  height: 10%;
+}
+footer img{
+  width: 5vw;
+  height:fit-content;
+  padding: 2%;
+}
+footer p{
+  width: 75vw;
+  height: fit-content;
+  font: var(--font-h2);
+  text-align: center;
+}

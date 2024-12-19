@@ -1,7 +1,7 @@
 /*--- Tipografias accesibles ---*/
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/*-- RESET BASICO --*/
+/* Reset básico */
 * body, h1, ul, li, a{
   margin: 0;
   padding: 0;
@@ -14,10 +14,10 @@
 --background-main:lightcyan;
 --background-heading: lavenderblush;
 --background-boton:LightYellow;
---background-boton-on:mistyrose;
---background-boton-in: pink;
 --background-menu:AntiqueWhite;
-
+/* --background-libro:; */
+--background-opciones:mistyrose;
+--background-boton-on: pink;
 --border: thin solid black;
 
 --font-h1: normal 1.75rem "Lexend", sans-serif;
@@ -31,33 +31,46 @@ body{
   height: 100%;
   background-repeat: no-repeat;
 }
-header{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items:center;
-
+header, footer{
+  margin: 0;
+  padding: 1.5% 1%;
   background: var(--background-heading);
   width: 100%;
   height: 10%;
+  display: flex;
+  z-index: 10;
+  flex-flow: row wrap;
+  align-content: start;
+  justify-items: auto;
+  flex-grow: 1;
+  gap: 10px;
 }
-/*-- ESTILOS DEL HEADER --*/
 header img{
   position: relative;
-  width:20vw;
+  width: 20vw;
   height: fit-content;
 }
-.titular{
+footer img{
+  width: 5vw;
+  height:fit-content;
+  padding: 2%;
+}
+#titular{
+  position: relative;
+  width: 60vw;
+  height: inherit;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-content: center;
-  align-items: center;
-  width: 70vw;
+  font: var(--font-h1);
+}
+footer p{
+  width: 75vw;
   height: fit-content;
-  margin: 0%;
-  padding: 0%;
+  font: var(--font-h2);
+  text-align: center;
+  justify-content: center;
 }
 h1{
   font:var(--font-h1);
@@ -77,8 +90,8 @@ h3{
 p{
   font: var(--font-p);
 }
- 
-/*-- ESTILOS DE BURGER --*/
+
+/*---  MENU HAMBURGUESA ---*/
 .burger-menu {
   position: relative;
 }
@@ -90,12 +103,11 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 4rem;
+  width: 4rem; /* Aumenta el área clicable */
   height: 4rem;
   cursor: pointer;
-  padding: 0.5vw; /* ampliar el área clicable*/
 }
-.menu-icon span{
+.menu-icon span {
   display: block;
   height: 4px;
   background-color:black;
@@ -103,13 +115,17 @@ p{
   width: 100%;
   transition: all 0.3s ease;
 }
+/* Aumentar área clicable */
+.menu-icon {
+  padding: 10px; /* Más espacio clicable alrededor */
+}
 /* Menú desplegable */
 .menu {
   display: none;
   flex-flow: column nowrap;
   background-color: var(--background-menu);
   border: var(--border);
-  position: relative;
+  position: absolute;
   top: 100%;
   right: 0;
   width: 25vw;
@@ -131,87 +147,55 @@ p{
 }
 /* Animaciones para transición */
 .menu-toggle:checked + .menu-icon span:nth-child(1) {
-  opacity: 0;
+  transform: translateY(8px) rotate(45deg);
 }
 .menu-toggle:checked + .menu-icon span:nth-child(2) {
-  transform: translateY(8px) rotate(45deg);
-  
+  opacity: 0;
 }
 .menu-toggle:checked + .menu-icon span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-/*-- ESTILOS DEL MAIN --*/
+/*--- CONTENEDORES RESPONSIVE ---*/
 main{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(320px,100%));
-  grid-template-rows: auto-fit,100%;
+  grid-template-columns: repeat(1fr 1fr 1fr 1fr, minmax(320px,100%));
+  grid-template-rows: repeat(auto-fit,100%);
+
   gap: 1%;
-  margin-top: 0.5%;
-  padding: 0%;
-  height: 70%;
-  background: var(--background-main);
+  padding: 0.5%;
+  background-color: var(--background-main);
 }
 button{
-  padding: 10px 20px;
+  padding: 0.25rem 0.5rem;
   background: var(--background-boton);
-  color: black;
   border: var(--border);
-  border-radius: 2rem;
+  border-radius: 1rem;
+  height: fit-content;
   cursor: pointer;
 }
-button:hover{
-  background: var(--background-boton-on);
+button:hover {
+  background-color: var(--background-boton-on);
 }
-button:active{
-  background: var(--background-boton-in);
+button:active {
+  background-color: var(--background-boton);
 }
-/*-- ESTILOS DE BAR --*/
-.bar-menu{
+.bar-menu nav{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
-  justify-items: center;
-  gap: 1%;
-  background-color: var(--background-main);
-  padding: 0.5%;
-}
-/*-- ESTILOS DE GALERIA DE ARTICULOS -- */
-.gallery{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   gap: 2%;
-  margin: 5%;
+  padding: 1%;
 }
-.gallery article{
-  width: 33%;
-  text-align: center;
+.bar-menu button{
+  flex: 1 0;
 }
-
-/*-- ESTILOS DE FOOTER --*/
-footer{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  margin-bottom: 0%;
-  padding: 1% 1.5%;
-
-  background: var(--background-heading);
-  width: 100%;
-  height: 10%;
-
-}
-footer img{
-  width: 5vw;
-  height:fit-content;
-  padding: 2%;
-}
-footer p{
-  width: 75vw;
+.recomendado section{
+  display:flex;
+  flex-flow: column wrap;
+  
+  gap: 3%;
+  align-content: top;
+  justify-content: center;
   height: fit-content;
-  font: var(--font-h2);
-  text-align: center;
 }

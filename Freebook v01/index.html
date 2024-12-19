@@ -22,7 +22,8 @@
       <h2>Cuando aprendes a leer, serás libre para siempre</h2>
     </div>
   <!-- BURGER MENU -->
-  <nav class="burguer-menu">
+  <!-- Menú hamburguesa -->
+  <nav class="menu-hamburguesa">
     <!-- Input tipo checkbox para controlar el menú -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <!-- Label que actúa como el ícono del menú -->
@@ -35,9 +36,9 @@
     <ul class="menu">
       <li><a href="#login">Inicio</a></li>
       <li><a href="#about">Sobre Nosotros</a></li>
-      <li><a href="#favorite">Favoritos</a></li>
+      <li><a href="#favorite">Servicios</a></li>
       <li><a href="#contact">Contacto</a></li>
-      <li><a href="#search">Buscar</a></li> <!-- Funcionalidad pendiente -->    
+      <li><a href="#search">Buscar</a></li>
       <li><a href="#logout">Salir</a></li>
     </ul>
   </nav>
@@ -126,9 +127,37 @@
     </div>
   </section>
 </main>
-<!-- CONTENIDO ESPECÍFICO -->
-<!-- Formulario de contacto CSS -->
-<!-- Forumulario de registro y validación de usuario y contraseña JS-->
+<!-- FORMULARIOS -->
+ <!-- Formulario de contacto JS -->
+ <div class="formulario">
+  <a href ref="iniciativa.dar.01@gmail.com" id="mail"></a>
+  <form id="contact" action="" class="formulario">
+    <h2>Contáctanos</h2>
+    <label for="name">Nombre</label>
+    <input name="name" required type="text" id="name" placeholder="Nombre y apellido">
+    <label for="email">Correo electrónico</label>
+    <input name="email" type="text" id="email" required placeholder="usuario@mai.com">
+    <label for="message">Mensaje</label>
+    <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+    <button type="submit" class="btn primary full">Enviar mensaje</button>
+  </form>
+  </div> 
+<!-- Formulario de registro y validación de usuario y contraseña CSS-->
+<div class="registro">
+    <form action="" id="login" class="formulario">
+      <h2>Inicia sesión</h2>
+      <h3>¿Aún no tienes una cuenta?</h3><a href="#" id="crear">Crea tu cuenta</a>
+      <label for="name">Ingrese su nombre</label>
+      <input name="name" required type="text" id="name" placeholder="">
+      <label for="email">Ingrese su correo electrónico</label>
+      <input name="email" type="text" id="email" required placeholder="">
+      <label for="password">Ingrese su contraseña</label>
+      <input name="password" type="text" id="password" required placeholder="">
+      <button type="submit" class="btn primary full">Ingresar</button>
+  </form>
+
+</div>
+
 <!-- Guardar favoritos -->
 <!-- Catálogo como base de datos interna --> 
  
