@@ -157,10 +157,8 @@ p{
 }
 /*--- CONTENEDORES RESPONSIVE ---*/
 main{
-  display: grid;
-  grid-template-columns: repeat(1fr 1fr 1fr 1fr, minmax(320px,100%));
-  grid-template-rows: repeat(auto-fit,100%);
-
+  width: 100%;
+  height: auto;
   gap: 1%;
   padding: 0.5%;
   background-color: var(--background-main);
@@ -190,12 +188,36 @@ button:active {
 .bar-menu button{
   flex: 1 0;
 }
+
+.caja {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  grid-template-areas:"recomendado beneficios beneficios beneficios"
+                      "libro" "";
+}
+.item-1 { grid-area: recomended; background-color: blue; }
+.item-2 { grid-area: benefits; background-color: chartreuse; }
+
 .recomendado section{
   display:flex;
-  flex-flow: column wrap;
-  
+  flex-flow: column wrap;  
   gap: 3%;
   align-content: top;
   justify-content: center;
   height: fit-content;
+}
+.recomendado .item-1{
+  grid-area: recomended;
+}
+.beneficios section{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 3%;
+  align-content: top;
+  justify-content: center;
+  height: fit-content;
+}
+.beneeficios .item-2{
+ grid-area:benefits;
 }

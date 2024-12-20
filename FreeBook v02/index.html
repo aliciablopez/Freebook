@@ -43,71 +43,63 @@
 
 <main>
   <!--Menú en barra horizontal-->
-  <div class="bar-menu">
-    <nav>
-      <button id="login" type="button">Iniciar Sesión</button>
-      <button id="favorite" type="button">Favoritos</button>
-      <button id="search" type="button">Buscar</button>
-      <button id="logout" type="button">Salir</button>
-    </nav>
+  <nav class="bar-menu">
+    <button id="login" type="button">Iniciar Sesión</button>
+    <button id="favorite" type="button">Favoritos</button>
+    <button id="search" type="button">Buscar</button>
+    <button id="logout" type="button">Salir</button>
+  </nav>
+  <div class="caja">
+    <section class="recomendado item-1">
+      <h2>Recomendado</h2>
+      <article class="libro">
+        <figure>
+          <img src="assets/portadas/Exupery-LePetitPrince.jpg" alt="El principito en francés"> 
+          <figcaption>
+            <p>Le petit prince - Saint Exupéry</p>
+          </figcaption>
+        </figure>
+        <button id="favorito" type="button"><a href="#favorite">Favorito</a></button>
+        <button id="leer" type="button"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
+        <button id="escuchars" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
+      </article>
+    </section>  
   </div>
-<!--Carrusel de tres libros pseudo aleatorio con JS-->
-
-<section class="carrusel">
-  <div class="recomendado">
-    <h2>Recomendado</h2>
-    <article class="libro">
-      <figure>
-        <img src="assets/portadas/Exupery-LePetitPrince.jpg" alt="El principito en francés"> 
-        <figcaption>
-          <p>Le petit prince - Saint Exupéry</p>
-        </figcaption>
-      </figure>
-    </article>
-  </div>
-  
-  <div class="beneficios">
-            <button id="opciones" type="button"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
-            <button id="opciones" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
-            <button id="opciones" type="button"><a href="#favorite">Favorito</a></button>
-          </div>
-        </section>
-  </div>
-    
 <!--Beneficios contenedor de 3 cajas-->
-<div class="Beneficios"></div>
-  <h2>Beneficios de la comunidad Freebook</h2>
-  <section id="caja">
-    <article id="beneficios"> <!-- id iniciar sesión con JS -->
-      <i class="fa-solid fa-bookmark"></i>
-      <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
-      <button id="login" type="button">Inicio</button>
-    </article>
-    
-    <article id="beneficio">
-      <i class="fa-solid fa-people-group"></i>
-      <p>Descripción de visión, misión y valores: facilitar el acceso a clásicos de la literatura
-      </p>
-      <button id="beneficio" type="button">Volver</button>
-    </article>
-    
-    <article id="beneficio">
-      <i class="fa-solid fa-bookmark"></i>
-      <p>Funciona como carrito</p>
-    </article>
+    <div class="beneficios item-1">
+      <h2>Beneficios de la comunidad Freebook</h2>
+      <article id="login"> <!-- id iniciar sesión con JS -->
+        <i class="fa-solid fa-bookmark"></i>
+        <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
+        <button id="login" type="button">Inicio</button>
+      </article>
+    </div>
 
-    <article id="beneficio"><!-- Catálogo con React y Buscar en BD interna-->
-      <i class="fa-solid fa-tablet-screen-button"></i>
-      <p>Descripción del catálogo </p>
-      <button id="epub" type="button">Libros electrónicos</button>
-      <button id="audio" type="button">Audiolibros</button>
-      <button id="return" type="button">Volver</button>
-    <article id="search"></article>
-      <img src="#" alt="Imagen de lupa">
-      <p>Buscar en el catálogo</p>
-      <button type="button">Buscar</button>
-    </article>
+    <div class="beneficios item-2">
+      <article id="about">
+        <i class="fa-solid fa-people-group"></i>
+        <p>Descripción de visión, misión y valores: facilitar el acceso a clásicos de la literatura
+        </p>
+      </article>
+    </div>
+    <div class="beneficios item-3">
+           <article id="favoritos">
+        <i class="fa-solid fa-bookmark"></i>
+        <p>Los usuarios registrados pueden guardar sus libros favoritos</p>
+        <button id="favorites">Mis favoritos</button>
+      </article>
+    </div>
+    <div class="beneficios item-4">
+      <article>
+        <img src="#" alt="Imagen de lupa">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Nuestro catálogo </p>
+        <button id="epub" type="button">Libros electrónicos</button>
+        <button id="audio" type="button">Audiolibros</button>
+        <button id="search" type="button">Buscar</button>
+      </article>
     </section>
+  </div>
   </main>
 <!-- CONTENIDO ESPECÍFICO-->
 <!-- Formulario de contacto con CSS y JS -->
