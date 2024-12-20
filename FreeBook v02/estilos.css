@@ -177,7 +177,7 @@ button:hover {
 button:active {
   background-color: var(--background-boton);
 }
-.bar-menu nav{
+.bar-menu{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -188,36 +188,11 @@ button:active {
 .bar-menu button{
   flex: 1 0;
 }
-
-.caja {
+.cage{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20% 80%;
-  grid-template-areas:"recomendado beneficios beneficios beneficios"
-                      "libro" "";
-}
-.item-1 { grid-area: recomended; background-color: blue; }
-.item-2 { grid-area: benefits; background-color: chartreuse; }
-
-.recomendado section{
-  display:flex;
-  flex-flow: column wrap;  
-  gap: 3%;
-  align-content: top;
-  justify-content: center;
-  height: fit-content;
-}
-.recomendado .item-1{
-  grid-area: recomended;
-}
-.beneficios section{
-  display: flex;
-  flex-flow: column wrap;
-  gap: 3%;
-  align-content: top;
-  justify-content: center;
-  height: fit-content;
-}
-.beneeficios .item-2{
- grid-area:benefits;
+  grid-template-rows: 1fr 1fr;
+  grid-area: recomendado;
+  justify-content: space-around;
+  align-items: center;
 }

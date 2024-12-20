@@ -49,57 +49,48 @@
     <button id="search" type="button">Buscar</button>
     <button id="logout" type="button">Salir</button>
   </nav>
-  <div class="caja">
-    <section class="recomendado item-1">
-      <h2>Recomendado</h2>
-      <article class="libro">
-        <figure>
-          <img src="assets/portadas/Exupery-LePetitPrince.jpg" alt="El principito en francés"> 
-          <figcaption>
-            <p>Le petit prince - Saint Exupéry</p>
-          </figcaption>
-        </figure>
-        <button id="favorito" type="button"><a href="#favorite">Favorito</a></button>
-        <button id="leer" type="button"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
-        <button id="escuchars" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
-      </article>
-    </section>  
+  
+  <article class="recomendado">
+    <h2>Recomendado</h2>
+    <figure>
+      <img src="assets/portadas/Exupery-LePetitPrince.jpg"   alt= El principito en francés> 
+      <figcaption><p>Le petit prince - Saint Exupéry</p></figcaption>
+    </figure>
+    <button id="favorito" type="button"><a href="#favorite">Favorito</a></button>
+    <button id="leer" type="button"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
+    <button id="escuchars" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
+  </article>
+  <div class="beneficios">
+    <h2>Beneficios de la comunidad Freebook</h2>
   </div>
-<!--Beneficios contenedor de 3 cajas-->
-    <div class="beneficios item-1">
-      <h2>Beneficios de la comunidad Freebook</h2>
-      <article id="login"> <!-- id iniciar sesión con JS -->
-        <i class="fa-solid fa-bookmark"></i>
-        <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
-        <button id="login" type="button">Inicio</button>
-      </article>
-    </div>
+      <article class="about">
+      <i class="fa-solid fa-people-group"></i>
+      <p>Descripción de visión, misión y valores: facilitar el acceso a clásicos de la literatura
+      </p>
+    </article>
+  
+    <article class="favoritos">
+      <i class="fa-solid fa-bookmark"></i>
+      <p>Los usuarios registrados pueden guardar sus libros favoritos</p>
+      <button id="favorites">Mis favoritos</button>
+    </article>
+    
+    <articl class="search">
+      <img src="#" alt="Imagen de lupa">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <p>Nuestro catálogo </p>
+      <button id="epub" type="button">Libros electrónicos</button>
+      <button id="audio" type="button">Audiolibros</button>
+      <button id="search" type="button">Buscar</button>
+    </article>
+    
+    <article class="login"> <!-- id iniciar sesión con JS -->
+      <i class="fa-solid fa-bookmark"></i>
+      <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
+      <button id="login" type="button">Inicio</button>
+    </article>
+    
 
-    <div class="beneficios item-2">
-      <article id="about">
-        <i class="fa-solid fa-people-group"></i>
-        <p>Descripción de visión, misión y valores: facilitar el acceso a clásicos de la literatura
-        </p>
-      </article>
-    </div>
-    <div class="beneficios item-3">
-           <article id="favoritos">
-        <i class="fa-solid fa-bookmark"></i>
-        <p>Los usuarios registrados pueden guardar sus libros favoritos</p>
-        <button id="favorites">Mis favoritos</button>
-      </article>
-    </div>
-    <div class="beneficios item-4">
-      <article>
-        <img src="#" alt="Imagen de lupa">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <p>Nuestro catálogo </p>
-        <button id="epub" type="button">Libros electrónicos</button>
-        <button id="audio" type="button">Audiolibros</button>
-        <button id="search" type="button">Buscar</button>
-      </article>
-    </section>
-  </div>
   </main>
 <!-- CONTENIDO ESPECÍFICO-->
 <!-- Formulario de contacto con CSS y JS -->
