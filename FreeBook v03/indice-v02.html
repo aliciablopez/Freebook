@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/tools/reset.css">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <script src="https://kit.fontawesome.com/c101ab7deb.js" crossorigin="anonymous"></script>
+  <script async src="script.js"></script>
+  <title>FreeBook</title> 
+</head>
+
+<body>
+<header>
+    <img src="assets/images/logo-freebook.png" alt="Logo de Freebok">
+    <div id="titular">
+      <h1>FreeBook</h1>
+      <h2>Cuando aprendes a leer, serás libre para siempre</h2>
+    </div>
+  <!--Menú hamburguesa-->
+  <nav class="burger-menu">
+    <!-- Input tipo checkbox para controlar el menú -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <!-- Label que actúa como el ícono del menú -->
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <!-- Contenido del menú -->
+    <ul class="menu">
+      <li><a href="#login">Inicio</a></li>
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#favorite">Favoritos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#search">Buscar</a></li> <!-- Funcionalidad pendiente -->    
+      <li><a href="#logout">Salir</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!--Menú en barra horizontal-->
+  <nav class="bar-menu">
+    <button id="login" type="button">Iniciar Sesión</button>
+    <button id="favorite" type="button">Favoritos</button>
+    <button id="search" type="button">Buscar</button>
+    <button id="logout" type="button">Salir</button>
+  </nav>
+  
+  <article class="recomendado">
+    <h2>Recomendado</h2>
+    <figure>
+      <img src="assets/portadas/Exupery-LePetitPrince.jpg"   alt= El principito en francés> 
+      <figcaption><p>Le petit prince - Saint Exupéry</p></figcaption>
+    </figure>
+    <button id="favorito" type="button"><a href="#favorite">Favorito</a></button>
+    <button id="leer" type="button"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
+    <button id="escuchars" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
+  </article>
+  <div class="beneficios">
+    <h2>Beneficios de la comunidad Freebook</h2>
+  </div>
+      <article class="about">
+      <i class="fa-solid fa-people-group"></i>
+      <p>Descripción de visión, misión y valores: facilitar el acceso a clásicos de la literatura
+      </p>
+    </article>
+  
+    <article class="favoritos">
+      <i class="fa-solid fa-bookmark"></i>
+      <p>Los usuarios registrados pueden guardar sus libros favoritos</p>
+      <button id="favorites">Mis favoritos</button>
+    </article>
+    
+    <articl class="search">
+      <img src="#" alt="Imagen de lupa">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <p>Nuestro catálogo </p>
+      <button id="epub" type="button">Libros electrónicos</button>
+      <button id="audio" type="button">Audiolibros</button>
+      <button id="search" type="button">Buscar</button>
+    </article>
+    
+    <article class="login"> <!-- id iniciar sesión con JS -->
+      <i class="fa-solid fa-bookmark"></i>
+      <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
+      <button id="login" type="button">Inicio</button>
+    </article>
+    
+
+  </main>
+<!-- CONTENIDO ESPECÍFICO-->
+<!-- Formulario de contacto con CSS y JS -->
+<section id="formulario">
+  <div>
+  <!--Registrar nuevo usuario y validar usuario con mail y contraseña en JS-->
+    <form action="/enviar-mensaje" method="post">
+      <ul>
+        <li>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="mail" name="user_mail" />
+        </li>
+        <li>
+          <label for="msg">Mensaje:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+      </ul>
+    </form>
+</div>
+</section>
+<!-- Desarrollo marcar favorito con CSS y  JS-->
+<section>
+  <article id="#favorite">
+
+  </article>
+</div>
+  <footer>
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank"><img src="assets/images/CC-BY.png" alt="Licencia Creative Commons Atribución"></a>
+    <p>Desarrollado por Alicia López - 2024</p>
+    <a href="https://github.com/aliciablopez" target="_blank"><img src="assets/images/github.png" alt="Logo de Github"></a>
+    <a href="https://www.linkedin.com/in/aliciablopez" target="_blank"><img src="assets/images/linkedIn.png" alt="Logo de LinkedIn"></a>
+  </footer>
+</body>
+</html>
