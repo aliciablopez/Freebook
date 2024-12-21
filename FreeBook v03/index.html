@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="assets/tools/reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="form.css"> <!-- Estilo especifico para los formularios-->
@@ -44,17 +44,14 @@
   </header>
 <main>
   <!--Menú en barra horizontal-->
-  <section class="bar-menu">
-    <nav>
-      <button id="login" type="button">Iniciar Sesión</button>
-      <button id="about" type="button">Sobre nosotros</button>
-      <button id="favorite" type="button">Favoritos</button>
-      <button id="contact" type="button" onclick="openForm()">Contacto</button>
-      <button id="search" type="button">Buscar</button>      
-      <button id="logout" type="button">Salir</button>
-    </nav>
-  </section>
-  
+  <nav class="bar-menu">
+    <button id="login">Iniciar Sesión</button>
+    <button id="about">Sobre nosotros</button>
+    <button id="favorite">Favoritos</button>
+    <button id="contact" onclick="openForm()">Contacto</button>
+    <button id="search">Buscar</button>      
+    <button id="logout">Salir</button>
+  </nav>
   <!-- FORMULARIOS -->
   <!-- Formulario de contacto JS -->
   <form id="contacto">
@@ -76,7 +73,7 @@
             <span></span>
         </div>
         <button type="submit">Enviar</button>
-      <button type="cancel" onclick="closeForm()">cerrar</button>
+      <button type="reset" onclick="closeForm()">cerrar</button>
     </div>
   </form>
   <script>
@@ -101,9 +98,9 @@
           </figcaption>   
         </figure>
         <div>
-          <button id="favorite" type="button"><a href="#FAVORITE">Guardar</a></button> <!--Equivale al carrito de compras-->
-          <button id="descargar" type="button"><a href="#DESCARGAR">Descargar</a></a></button>
-          <button id="escuchar" type="button"><a href="assets/biblioteca/Exupery-LePetitPrince.mp3">Escuchar</a></button>
+          <button class="favorite">Guardar</button> <!--Equivale al carrito de compras-->
+          <button class="descargar">Descargar</button>
+          <button class="escuchar">Escuchar</button>
         </div>
       </article>
     </div>
@@ -115,21 +112,21 @@
         <i class="fa-solid fa-bookmark fa-5x"></i>
         <h3>Membresía</h3>
         <p>Usuario registrado: puede descargar o marcar como favorito el libro que está leyendo</p>
-        <button id="login" type="button">Iniciar sesión</button>
+        <button id="login" >Iniciar sesión</button>
       </article>
       <article class="beneficios">
         <i class="fa-solid fa-people-group fa-5x"></i>
         <h3>Proyecto FreeBook</h3>
         <p>Visión, misión y valores de la comunidad Freebook</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sequi laboriosam culpa ipsam suscipit harum.</p>
-      <button id="contacto" type="button">Contacto</button> 
+      <button id="contacto" >Contacto</button> 
       </article>
       <article class="beneficios">
         <i class="fa-solid fa-tablet-screen-button fa-5x"></i>
         <h3>Catálogo</h3>
         <p>Oferta de libros electrónicos y audiolibros</p>
-        <button id="epub" type="button">Libros electrónicos</button>
-        <button id="audio" type="button">Audiolibros</button>
+        <button id="epub" >Libros electrónicos</button>
+        <button id="audio" >Audiolibros</button>
       </article>
     </div>
   </section>
