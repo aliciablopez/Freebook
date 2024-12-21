@@ -12,12 +12,15 @@
 /*--- Variables CSS ---*/
 :root{
 --background-main:lightcyan;
---background-heading: lavenderblush;
+--background-heading: honeydew;
 --background-boton:LightYellow;
 --background-boton-on:mistyrose;
 --background-boton-in: pink;
 --background-menu:AntiqueWhite;
 --background-form: aliceblue;
+--background-article: honeydew;
+border: black;
+
 
 --form-shadow:0 5px 10px -5px rgb(221, 160, 221 / 30%);
 --border: thin solid black;
@@ -167,6 +170,7 @@ main{
 
 #beneficios{
   grid-area: beneficio;
+
 }
 button{
   padding: 10px 20px;
@@ -206,6 +210,7 @@ button:active{
 }
 .gallery article{
   text-align: center;
+
 }
 
 
