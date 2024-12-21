@@ -14,7 +14,13 @@ Es sumativo, por lo que se pone a disposición de la comunidad las versiones ant
 + Estilos con CSS (nivel intermedio)
 + Estructura con HTML (nivel intermedio)
 + diseño IU/UX (completada)
+
+# Para la próxima versión
++ depurar código en index.html, style.css y script.js
++ Mejorar las funcionalidades con JS
++ Mejorar los estilos con CSS
++ Actualizar archivo con prototipo en alta
+  
 # Colaboradores
 + Equipo docente del programa ONE-Alura Latam
 + Estrella Pintos López
-  
