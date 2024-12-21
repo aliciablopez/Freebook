@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,52 +66,59 @@
     </nav>
   </section>
 
-  <!-- Formulario de registro JS -->
-    <div class="registro">
-      <form action="" id="login" class="formulario">
+  <!-- Formulario de registro JS revisar html para elegir login o sign up, validar claves de acceso -->
+  <section class="formulario">
+    <form action="" id="login" class="formulario">
         <h2>Inicia sesión</h2>
-        <h3>¿Aún no tienes una cuenta?</h3><a href="#" id="crear">Crea tu cuenta</a>
-        <label for="name">Ingrese su nombre</label>
-        <input name="name" required type="text" id="name" placeholder="">
-        <label for="email">Ingrese su correo electrónico</label>
-        <input name="email" type="text" id="email" required placeholder="">
-        <label for="password">Ingrese su contraseña</label>
-        <input name="password" type="text" id="password" required placeholder="">
-        <button type="submit" class="btn primary full">Ingresar</button>
-    </form>
-  
+        <h3>¿Aún no tienes una cuenta?</h3>
+        <h3><a href="#" id="crear">¡Puedes creala ahora!</a></h3>
+        <ul>
+          <li><label for="name">Ingrese su nombre</label></h3></li>
+          <input name="name" required type="text" id="name" placeholder="">
+          <li><label for="email">Ingrese su correo electrónico</label></li>
+          <input name="email" type="text" id="email" required placeholder="">
+          <li><label for="password">Ingrese su contraseña</label></li>
+          <input name="password" type="text" id="password" required placeholder="">
+          <button type="submit" class="btn primary full">Ingresar</button>
+        </ul>
+      </form>
+  </section>
+
   <!-- Formulario de contacto JS -->
-  <div class="formulario">
-   <a href ref="iniciativa.dar.01@gmail.com" id="mail"></a>
-   <form id="contact" action="" class="formulario">
-     <h2>Contáctanos</h2>
-     <label for="name">Nombre</label>
-     <input name="name" required type="text" id="name" placeholder="Nombre y apellido">
-     <label for="email">Correo electrónico</label>
-     <input name="email" type="text" id="email" required placeholder="usuario@mai.com">
-     <label for="message">Mensaje</label>
-     <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
-     <button type="submit" class="btn primary full">Enviar mensaje</button>
-   </form>
-  </div> 
+  <section class="formulario">
+    <i class="fa-solid fa-envelope"></i>
+    <a href ref="iniciativa.dar.01@gmail.com" id="mail"></a>
+    <form id="contact" action="" class="formulario">
+    <h2>Contáctanos</h2>
+    <ul>
+      <li><label for="name">Nombre</label></li>
+      <input name="name" required type="text" id="name" placeholder="Nombre y apellido">
+      <li><label for="email">Correo electrónico</label></li>
+      <input name="email" type="text" id="email" required placeholder="usuario@mai.com">
+      <li><label for="message">Mensaje</label></li>
+      <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+      <button type="submit" class="btn primary full">Enviar mensaje</button>
+    </ul>   
+    </form>
+  </section> 
 
 <!-- MARCAR Y GUARDAR FAVORITO -->
 
 <!-- DESCARGAR LIBRO -->
 
 <div class="comunidad">
+  <h2 class="comunidad">Recomendado</h2>
   <article class="libro"><!--fila 1 columna 1-->
-    <h2>Recomendado</h2>
     <figure>
-      <img src="assets/portadas/Exupery-LePetitPrince.jpg"   alt= El principito en francés> 
+    <img src="assets/portadas/Exupery-LePetitPrince.jpg"   alt= El principito en francés> 
       <figcaption><p>Le petit prince - Saint Exupéry</p></figcaption>
     </figure>
     <button id="favorito" type="button"><a href="#favorite">Favorito</a></button>
     <button id="leer" type="button"><a href="assets/biblioteca/ElPrincipito.pdf">Leer</a></button>
-    <button id="escuchars" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
+    <button id="escuchar" type="button"><a href="assets/biblioteca/ElPrincipito.mp3">Escuchar</a></button> 
   </article>
   <article class="beneficios item-1">
-    <h2>Beneficios de la comunidad Freebok</h2> <!--fila 1 columnas 2 a 4-->
+    <h2 class="comunidad">Beneficios de la comunidad Freebok</h2> <!--fila 1 columnas 2 a 4-->
     <article class="beneficios">
       <i class="fa-solid fa-bookmark fa-5x"></i>
       <h3>Membresía</h3>

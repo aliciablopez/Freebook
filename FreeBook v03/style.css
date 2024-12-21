@@ -186,8 +186,24 @@ button:active{
   gap: 2%;
   margin: 5%;
 }
-.comunidad  article{
+.comunidad article{
   width: 25%
   text-align: center;
 }
+/*--- ESTILOS FORMULARIOS*/
+.formulario{
+  justify-items: left;
+  border: var(--border);
+  border-radius: 2rem;
+}
+.formulario li, .formulario label{
+  display: flex;
+  flex-direction: column wrap;
+  padding: 5%;
+  justify-content: space-around;
+  justify-items: left;
+  margin: 1%;
+  padding: 2rem;
+}
+
 

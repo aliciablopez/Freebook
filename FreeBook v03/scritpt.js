@@ -1,5 +1,7 @@
 //--- FUNCIONALIDADES COMUNES ---
 // Verificar que las opciones de bar menu y burger menu "llevan" al mismo lugar
+// Los menúes desaparecen cuando alcanzan interrupen según minmax de style.css
+// Los formularios están ocultos hasta que el usuario lo selecciona
 
 //--- FORMULARIO DE CONTACTO --- línea 83 en index.html
 // Desplegar formulario, completar y enviar
