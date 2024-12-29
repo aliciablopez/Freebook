@@ -2,7 +2,7 @@
 Co-diseñar una biblioteca digital (libros en formatos EPUB y MP3) para fomentar la lectura de autores clásicos en diversos idiomas.
 Este proyecto explora e investiga las posibilidades para mantener y escalar con ReactJS.
 
-# Objeticos de las versiones anteriores:
+# Objetivos de las versiones anteriores:
 FreeBook 1.1: Diseño IU/UX
 FreeBook 1.2: Web semántica y WCAG 2.2
 FreeBook 1.3: Responsividad sin media queries
